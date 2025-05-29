@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sederhana</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="/action_page.php" method="get" target="_blank">
+        <label for="depan">Nama depan:</label><br>
+        <input type="text" id="depan" name="i_name" value="Budi"><br>
+        <label for="n_belakang">Nama Belakang:</label><br>
+        <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br><br>
+        <input type="submit" value="kirim">
+        <input type="reset" value="reset">
+    </form>
+    <p>Jika Anda mengklik tombol "kirim", data formulir akan dikirim ke halaman bernama "/action_page.php".</p>
+    <p> <!-- Uji coba ini menambahkan atribut "target" seperti _self, _blank, dan lainnya, 
+        yang fungsinya mirip dengan pembahasan pada modul 1. 
+        Atribut ini menentukan di mana halaman tujuan akan dibuka:
+        - _blank untuk membuka di tab baru,
+        - _self untuk membuka di jendela atau tab yang sama,
+        - _parent untuk membuka di jendela induk,
+        - _top untuk membuka di seluruh jendela.
+        Sementara itu, penggunaan method="get" akan mengirim data melalui URL, 
+        sedangkan method="post" mengirim data secara tersembunyi di belakang layar. -->
+    </p>
+</body>
+</html>
