@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196f3;
+            padding: 10px;
+            grid-template-columns: auto auto ;
+        }
+
+        .item1 {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            grid-column: 1 / 5;
+        }
+
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+
+        <div>
+            Elemen dalam grid akan membentang dari kolom pertama hingga kolom ketiga.
+        </div>
+        <div>
+            Kesimpulan skenario 1: <code>grid-column-start</code> menentukan dari kolom mana elemen akan mulai, 
+            sedangkan <code>grid-column-end</code> menentukan di kolom mana elemen akan berhenti.
+        </div>
+        <div>
+            Pada skenario 2, perubahan nilai <code>grid-template-columns</code> memengaruhi tampilan grid. 
+            Jika menggunakan ukuran kolom yang tidak proporsional seperti <code>10px 500px 20px 10px</code>, 
+            tata letak menjadi kurang seimbang. Sebaliknya, kombinasi seperti <code>70px 300px auto 40px</code> 
+            menghasilkan struktur yang lebih fleksibel dan seimbang.
+        </div>
+        <div>
+            Kesimpulan skenario 3: dengan menambahkan <code>grid-row: 1 / 4</code>, 
+            elemen akan memanjang secara vertikal hingga baris ke-4. Jika ditambahkan <code>1 / 5</code>, maka elemen akan memanjang lebih jauh ke bawah.
+        </div>
+        <div>
+            Kesimpulan skenario 4: dengan menambahkan <code>grid-column: 1 / 4</code>, 
+            elemen akan membentang dari kolom pertama hingga kolom keempat. Jika diubah menjadi <code>1 / 5</code>, 
+            maka lebarnya akan lebih luas lagi.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            display: flex;
+            background-color: indigo;
+            flex-flow: row-reverse wrap; 
+            justify-content: start; 
+        }
+
+        .wadah_flex > div {
+            background-color: orange;
+            margin: 10px;
+            padding: 5px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p>
+        Kesimpulan skenario 1 adalah, dengan menambahkan properti <code>display: flex;</code>,
+        urutan angka yang sebelumnya tersusun ke bawah menjadi tersusun ke samping.
+    </p>
+    <p>
+        Kesimpulan skenario 2 adalah, ketika kita menambahkan aturan CSS pada elemen anak dari kelas <code>wadah_flex</code>,
+        maka tampilan seperti warna latar belakang, jarak antar elemen (margin), ruang dalam elemen (padding), dan ukuran font akan disesuaikan.
+    </p>
+    <p>
+        Kesimpulan skenario 3 adalah, dengan menggunakan properti <code>flex-direction</code>,
+        kita dapat mengubah arah susunan elemen, misalnya menjadi kolom. Jika menggunakan nilai <code>column</code>,
+        elemen akan memanjang ke bawah. Jika menambahkan <code>reverse</code>, maka urutan elemen akan dibalik.
+    </p>
+    <p>
+        Kesimpulan skenario 4 adalah, dengan mengaktifkan <code>flex-wrap: wrap;</code>,
+        elemen akan turun ke baris berikutnya saat ruang tidak cukup. Namun jika menggunakan <code>nowrap</code>,
+        elemen akan tetap berada dalam satu baris dan tidak turun.
+    </p>
+    <p>
+        Kesimpulan skenario 5 adalah, dengan menggabungkan beberapa properti flex,
+        kita dapat menciptakan kombinasi layout yang fleksibel. Meskipun demikian, perlu diperhatikan bahwa
+        beberapa properti mungkin tidak berfungsi karena tertimpa oleh aturan CSS lainnya.
+    </p>
+    <p>
+        Kesimpulan skenario 6 adalah, dengan menambahkan properti <code>justify-content</code>,
+        kita bisa mengatur posisi elemen di dalam kontainer flex, seperti meratakannya ke kiri, tengah, atau kanan.
+    </p>
+</body>
+</html>

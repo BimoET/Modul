@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        div p {
+            color: red;
+        }
+
+        div > p {
+            background-color: yellow;
+        }
+
+        div + p {
+            background-color: darkgray;
+        }
+
+        div ~ p {
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>This is a paragraph 1. menampilkan tulisan dengan warna merah dan latar belakang kuning.</p>
+        <p>This is a paragraph 2. menampilkan tulisan berwarna merah dengan latar belakang kuning.</p>
+    </div>
+    <p>This is a paragraph 3. menampilkan tulisan berwarna cyan dengan latar belakang darkgray.</p>
+    <p>This is a paragraph 4. menampilkan tulisan dengan warna cyan.</p>
+
+</body>
+</html>
