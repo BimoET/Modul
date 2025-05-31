@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <p id="test">
+        Kode ini adalah contoh sederhana penggunaan jQuery untuk mengubah tampilan elemen HTML.
+        Saat halaman dimuat, paragraf dengan id test akan otomatis berubah warna latar menjadi hijau muda dan teksnya menjadi hitam.
+        Perubahan ini dilakukan dengan fungsi jQuery .css(), yang memudahkan manipulasi gaya elemen langsung lewat JavaScript.
+    </p>
+
+    <script>
+        $("#test").css("background-color", "lightgreen");
+        $("#test").css("color", "black");
+    </script>
+
+</body>
+</html>

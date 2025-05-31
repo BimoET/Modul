@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waktu</title>
+</head>
+<body>
+
+    <h1>Klik tombol di bawah untuk menampilkan tanggal dan waktu secara real-time</h1>
+    <button onclick="tanggal()">Klik !</button>
+    <p id="muncullah"></p>
+
+    <script>
+        function tanggal() {
+            let muncul = new Date();
+            document.getElementById("muncullah").innerHTML = muncul;
+        }
+    </script>
+    
+</body>
+</html>

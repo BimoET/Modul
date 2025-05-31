@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dialog Sederhana dengan jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #tombol {
+            background-color: #00aeff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: 2px solid #00aeff;
+            cursor: pointer;
+        }
+        #modal {
+            background-color: #f9f9f9;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            display: none;
+        }
+        #close-button {
+            background-color: crimson;
+            color: white;
+            padding: 4px 8px;
+            border: 1px solid crimson;
+            float: right;
+            cursor: pointer;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="tombol">Klik Ini</button>
+
+    <div id="modal">
+        <div id="close-button">X</div>
+        <p>
+            Pada kode ini saya membuat jendela dialog sederhana menggunakan jQuery. 
+            Tombol "Klik Ini" akan menampilkan kotak dialog, dan tombol "X" berfungsi untuk menutup dialog tersebut.
+        </p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#tombol").click(function(){
+                $("#modal").fadeIn(500);
+            });
+            $("#close-button").click(function(){
+                $("#modal").fadeOut(500);
+            });
+        });
+    </script>
+</body>
+</html>
